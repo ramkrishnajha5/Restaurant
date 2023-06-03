@@ -128,7 +128,7 @@ section{
 }
 
                             /* Menu Section Styling */
-section.menu>div.heading{
+div.heading{
     text-align: center;
 }
 .heading>span{
@@ -184,6 +184,10 @@ section.menu>div.heading{
     border-radius: 0.5rem;
     padding: 0.5rem;
 }
+.box h4:hover{
+        background: #e36729;
+        color: #eee;
+}
 .box span{
     font-size: 1.5rem;
     color: var(--main-color);
@@ -198,4 +202,46 @@ section.menu>div.heading{
     padding: 7px 10px;
     border-radius: 0 0.5rem 0 0.5rem;
     cursor: pointer;
+}
+
+                        /* Service Section Styling */
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.s-box{
+    text-align: center;
+    padding: 20px 30px;
+    /* border: 2px solid red; */
+}
+.s-box img{
+    width: 70px;
+}
+.s-box h3{
+    margin: 10px 0 5px 0;
+    font-size: 1.3rem;
+    color: var(--main-color);
+}
+.s-box p{
+    font-size: 0.8rem;
+}
+
+                        /* Contact Section Styling */
+.contact{
+    background: #feeee7;
+    padding: 70px 0;
+    text-align: center;
+    width: 67%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.contact h2{
+    font-size: 2rem;
+    color: var(--bg-color);
+    margin-bottom: 30px;
+}
+h2>span{
+    color: var(--main-color);
 }
