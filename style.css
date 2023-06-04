@@ -128,7 +128,7 @@ section{
 }
 
                             /* Menu Section Styling */
-section.menu>div.heading{
+div.heading{
     text-align: center;
 }
 .heading>span{
@@ -184,6 +184,10 @@ section.menu>div.heading{
     border-radius: 0.5rem;
     padding: 0.5rem;
 }
+.box h4:hover{
+        background: #e36729;
+        color: #eee;
+}
 .box span{
     font-size: 1.5rem;
     color: var(--main-color);
@@ -198,4 +202,127 @@ section.menu>div.heading{
     padding: 7px 10px;
     border-radius: 0 0.5rem 0 0.5rem;
     cursor: pointer;
+}
+
+                        /* Service Section Styling */
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.s-box{
+    text-align: center;
+    padding: 20px 30px;
+    /* border: 2px solid red; */
+}
+.s-box img{
+    width: 70px;
+}
+.s-box h3{
+    margin: 10px 0 5px 0;
+    font-size: 1.3rem;
+    color: var(--main-color);
+}
+.s-box p{
+    font-size: 0.8rem;
+}
+
+                        /* Contact Section Styling */
+.contact{
+    background: #feeee7;
+    padding: 70px 0;
+    text-align: center;
+    width: 67%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.contact h2{
+    font-size: 2rem;
+    color: var(--bg-color);
+    margin-bottom: 30px;
+}
+h2>span{
+    color: var(--main-color);
+}
+
+                        /* Footer Section Styling */
+.mains{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer{
+    padding: 10px 0;
+}
+.col{
+    width: 25%;
+}
+.col h4{
+    font-size: 1.3rem;
+    margin-bottom: 3px;
+    color: var(--text-color);
+    position: relative;
+}
+.dash{
+    height: 2px;
+    width: 80px;
+    border: 2px solid var(--main-color);
+    margin-bottom: 15px;
+}
+.col ul li:not(:last-child){
+    margin-bottom: 13px;
+}
+.col ul li a{
+    color:  #9897a9;
+    font-size: 1.1rem;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+}
+.col ul li a:hover{
+    color: var(--text-color);
+    transform: translateX(-5px);
+}
+.col .social{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col .social a{
+    height: 35px;
+    width: 35px;
+    background: var(--main-color);
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: .4s;
+}
+.col .social a:hover{
+    transform: scale(1.2);
+    color: var(--bg-color);
+    background: var(--text-color);
+}
+
+@media (min-width: 1161px) and (max-width: 1560px){
+    header{
+        padding: 15px 40px;
+    }
+    :root{
+        --big-font: 3.5rem;
+        --h2-font: 2rem;
+    }
+}
+
+@media(min-width: 901px) and (max-width: 1200px){
+    section{
+        padding: 50px 8%;
+    }
+    #menu-icon{
+        display: initial;
+        color: var(--text-color);
+    }
 }
