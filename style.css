@@ -282,10 +282,11 @@ h2>span{
     transform: translateX(-5px);
 }
 .col .social{
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 90%;
+    height: 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
 }
 .col .social a{
     height: 35px;
